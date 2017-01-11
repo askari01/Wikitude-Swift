@@ -7,13 +7,46 @@
 //
 
 import UIKit
+import CoreLocation
+import CoreMotion
 
-class ViewController: UIViewController, WTArchitectViewDelegate{
+
+class ViewController: UIViewController, WTArchitectViewDelegate, CLLocationManagerDelegate{
     fileprivate var architectView:WTArchitectView?
     fileprivate var architectWorldNavigation:WTNavigation?
     
+
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // test
+        var locationManager = CLLocationManager()
+        if CLLocationManager.authorizationStatus() == .notDetermined {
+            locationManager.requestWhenInUseAuthorization()
+        }
+        
+        locationManager.distanceFilter = kCLDistanceFilterNone
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.startUpdatingLocation()
+        
+        print (locationManager.location!)
+        
+        let manager = CMMotionManager()
+        
+        if manager.isAccelerometerAvailable {
+            manager.accelerometerUpdateInterval = 0.01
+            manager.startAccelerometerUpdates(to: OperationQueue.main) {
+                [weak self] (data: CMAccelerometerData?, error: Error?) in
+                if let acceleration = data?.acceleration {
+                    let rotation = atan2(acceleration.x, acceleration.y) - M_PI
+                    print (rotation)
+                }
+            }
+        }
+        // end test
+        
         do {
             try WTArchitectView.isDeviceSupported(forRequiredFeatures: WTFeatures._2DTracking)
             architectView = WTArchitectView(frame: self.view.frame)
