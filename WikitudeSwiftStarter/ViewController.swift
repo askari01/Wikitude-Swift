@@ -18,7 +18,7 @@ class ViewController: UIViewController, WTArchitectViewDelegate{
             try WTArchitectView.isDeviceSupported(forRequiredFeatures: WTFeatures._2DTracking)
             architectView = WTArchitectView(frame: self.view.frame)
             architectView?.delegate = self
-            architectView?.setLicenseKey("xxx")
+            architectView?.setLicenseKey("qByvLCLFn+zWbd/q+hLw6bB1O8ZAFxL8/x5gm/SyBy12uXgjB/d1AMXqsJKu5bS3zprcAa9r8+01xjF5IDD66fmBkjzB2eeA/F1gCbXSu8JOgsWHHNIM/nghjIUF2Vi6YTyBmg14nLwW4oEP4+/SQ1i40DoSQIYHzIzgh5vP9IJTYWx0ZWRfX4LR4ZVqtTgyXTbFGRLrE0uNwZ0JaWwD5XJcWYw01DdRzIjFOF2QcYnT8lw4jJMlzF3KubwtcE8IVJJivuVZHeMF5b+yUCgRTnSST4e9+cIGBk62075QEiK99AgkWd8ncl++xKOvOi9UcFFQFKT8eoV9e8r9rfVBucjKQkAklm1zUz1/riwmKUcW90PIzZi4WPawCgZAi8/tDRptNCFRBQdoep9d1wIIbvusXxZodAt6+gQJVaKmoZOBsQzGHaK5AsryRTm7VBBGOyeViNrTnZSAp6qo5y47p0W+1Hnvx4+tgGaoTc3o0QtM3qvMWXm5BLiGcMJFjI922y939cEAF3Db3VJ4T97gU35DbvnKkS2IFV3S35FxuNh047GboOBAAm0n00v0x8AapFQ5wXxH+WsxgbhP3OLR7sKsmheUk1eRcHqnHHuMGAb4ul+cbRoIgdTIPVo8ZrzyefZJqzwR5JOlc4gd47aFUCvRyDel4vO2oWD2S4q8HrQ=")
             //broken on purpose so it will not compile until  you add your Wikitude license
 
             

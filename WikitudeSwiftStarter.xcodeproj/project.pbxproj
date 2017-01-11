@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3646BA951E2604650048FE5C /* WikitudeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3646BA941E2604650048FE5C /* WikitudeSDK.framework */; };
 		51B11F701CF7884500C96A1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B11F6F1CF7884500C96A1F /* AppDelegate.swift */; };
 		51B11F721CF7884500C96A1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B11F711CF7884500C96A1F /* ViewController.swift */; };
 		51B11F751CF7884500C96A1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B11F731CF7884500C96A1F /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3646BA941E2604650048FE5C /* WikitudeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WikitudeSDK.framework; path = WikitudeSwiftStarter/Framework/WikitudeSDK.framework; sourceTree = "<group>"; };
 		51B11F6C1CF7884500C96A1F /* WikitudeSwiftStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikitudeSwiftStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51B11F6F1CF7884500C96A1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51B11F711CF7884500C96A1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3646BA951E2604650048FE5C /* WikitudeSDK.framework in Frameworks */,
 				51B11FCE1CF793DA00C96A1F /* libz.1.dylib in Frameworks */,
 				51B11FCC1CF793C200C96A1F /* libc++.1.dylib in Frameworks */,
 				51B11FB91CF7890800C96A1F /* SystemConfiguration.framework in Frameworks */,
@@ -128,6 +131,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3646BA931E2604600048FE5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3646BA941E2604650048FE5C /* WikitudeSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		51B11F631CF7884500C96A1F = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +147,7 @@
 				51B11F831CF7884600C96A1F /* WikitudeSwiftStarterTests */,
 				51B11F8E1CF7884600C96A1F /* WikitudeSwiftStarterUITests */,
 				51B11F6D1CF7884500C96A1F /* Products */,
+				3646BA931E2604600048FE5C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -269,11 +281,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = alexwasner;
 				TargetAttributes = {
 					51B11F6B1CF7884500C96A1F = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = SJ49GZ2K5L;
 						LastSwiftMigration = 0820;
 					};
 					51B11F7F1CF7884600C96A1F = {
@@ -411,8 +424,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -457,8 +472,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -477,6 +494,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -486,15 +504,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SJ49GZ2K5L;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WikitudeSwiftStarter",
+					"$(PROJECT_DIR)/WikitudeSwiftStarter/Framework",
 				);
 				INFOPLIST_FILE = WikitudeSwiftStarter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = wasner.wikitude.Starter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sps.wikitudeStarter;
 				PRODUCT_NAME = WikitudeSwiftStarter;
 				SWIFT_OBJC_BRIDGING_HEADER = "WikitudeSwiftStarter/WikitudeSwiftStarter-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -505,15 +525,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SJ49GZ2K5L;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WikitudeSwiftStarter",
+					"$(PROJECT_DIR)/WikitudeSwiftStarter/Framework",
 				);
 				INFOPLIST_FILE = WikitudeSwiftStarter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = wasner.wikitude.Starter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sps.wikitudeStarter;
 				PRODUCT_NAME = WikitudeSwiftStarter;
 				SWIFT_OBJC_BRIDGING_HEADER = "WikitudeSwiftStarter/WikitudeSwiftStarter-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
