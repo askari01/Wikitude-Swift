@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3646BA951E2604650048FE5C /* WikitudeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3646BA941E2604650048FE5C /* WikitudeSDK.framework */; };
+		3646BA971E2646DC0048FE5C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3646BA961E2646DC0048FE5C /* CoreMedia.framework */; };
+		3646BA991E2646F20048FE5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3646BA981E2646F20048FE5C /* Foundation.framework */; };
+		3646BA9B1E2647080048FE5C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3646BA9A1E2647080048FE5C /* QuartzCore.framework */; };
+		3646BA9D1E2647150048FE5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3646BA9C1E2647150048FE5C /* UIKit.framework */; };
 		51B11F701CF7884500C96A1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B11F6F1CF7884500C96A1F /* AppDelegate.swift */; };
 		51B11F721CF7884500C96A1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B11F711CF7884500C96A1F /* ViewController.swift */; };
 		51B11F751CF7884500C96A1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B11F731CF7884500C96A1F /* Main.storyboard */; };
@@ -54,6 +58,10 @@
 
 /* Begin PBXFileReference section */
 		3646BA941E2604650048FE5C /* WikitudeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WikitudeSDK.framework; path = WikitudeSwiftStarter/Framework/WikitudeSDK.framework; sourceTree = "<group>"; };
+		3646BA961E2646DC0048FE5C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		3646BA981E2646F20048FE5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3646BA9A1E2647080048FE5C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3646BA9C1E2647150048FE5C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		51B11F6C1CF7884500C96A1F /* WikitudeSwiftStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikitudeSwiftStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51B11F6F1CF7884500C96A1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51B11F711CF7884500C96A1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +101,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3646BA9D1E2647150048FE5C /* UIKit.framework in Frameworks */,
+				3646BA9B1E2647080048FE5C /* QuartzCore.framework in Frameworks */,
+				3646BA991E2646F20048FE5C /* Foundation.framework in Frameworks */,
+				3646BA971E2646DC0048FE5C /* CoreMedia.framework in Frameworks */,
 				3646BA951E2604650048FE5C /* WikitudeSDK.framework in Frameworks */,
 				51B11FCE1CF793DA00C96A1F /* libz.1.dylib in Frameworks */,
 				51B11FCC1CF793C200C96A1F /* libc++.1.dylib in Frameworks */,
@@ -134,6 +146,10 @@
 		3646BA931E2604600048FE5C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3646BA9C1E2647150048FE5C /* UIKit.framework */,
+				3646BA9A1E2647080048FE5C /* QuartzCore.framework */,
+				3646BA981E2646F20048FE5C /* Foundation.framework */,
+				3646BA961E2646DC0048FE5C /* CoreMedia.framework */,
 				3646BA941E2604650048FE5C /* WikitudeSDK.framework */,
 			);
 			name = Frameworks;
