@@ -12,6 +12,7 @@
 		3646BA991E2646F20048FE5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3646BA981E2646F20048FE5C /* Foundation.framework */; };
 		3646BA9B1E2647080048FE5C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3646BA9A1E2647080048FE5C /* QuartzCore.framework */; };
 		3646BA9D1E2647150048FE5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3646BA9C1E2647150048FE5C /* UIKit.framework */; };
+		36678D441E279A29008B9F4F /* ArchitectWorld in Resources */ = {isa = PBXBuildFile; fileRef = 36678D431E279A29008B9F4F /* ArchitectWorld */; };
 		51B11F701CF7884500C96A1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B11F6F1CF7884500C96A1F /* AppDelegate.swift */; };
 		51B11F721CF7884500C96A1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B11F711CF7884500C96A1F /* ViewController.swift */; };
 		51B11F751CF7884500C96A1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B11F731CF7884500C96A1F /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 		3646BA981E2646F20048FE5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3646BA9A1E2647080048FE5C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		3646BA9C1E2647150048FE5C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		36678D431E279A29008B9F4F /* ArchitectWorld */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ArchitectWorld; sourceTree = "<group>"; };
 		51B11F6C1CF7884500C96A1F /* WikitudeSwiftStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikitudeSwiftStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51B11F6F1CF7884500C96A1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51B11F711CF7884500C96A1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 		51B11F631CF7884500C96A1F = {
 			isa = PBXGroup;
 			children = (
+				36678D431E279A29008B9F4F /* ArchitectWorld */,
 				51B11FEF1CF7AA1B00C96A1F /* Web */,
 				51B11F6E1CF7884500C96A1F /* WikitudeSwiftStarter */,
 				51B11F831CF7884600C96A1F /* WikitudeSwiftStarterTests */,
@@ -345,6 +348,7 @@
 				51B11FF01CF7AA1B00C96A1F /* Web in Resources */,
 				51B11F7A1CF7884500C96A1F /* LaunchScreen.storyboard in Resources */,
 				51B11F771CF7884500C96A1F /* Assets.xcassets in Resources */,
+				36678D441E279A29008B9F4F /* ArchitectWorld in Resources */,
 				51B11F751CF7884500C96A1F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
